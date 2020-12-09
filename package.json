@@ -4,7 +4,7 @@
   "description": "```\r npm install\r npm start\r ```",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "nodemon hlstest.js"
   },
   "author": "",
   "license": "ISC",
@@ -13,6 +13,8 @@
     "express": "^4.17.1",
     "fluent-ffmpeg": "^2.1.2",
     "hls-server": "^1.5.0",
+    "mkdirp": "^1.0.4",
+    "moment": "^2.29.1",
     "nodemon": "^2.0.5",
     "vid-streamer": "^1.0.0"
   },
