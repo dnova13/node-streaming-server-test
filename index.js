@@ -11,6 +11,8 @@ app.get("/video", function (req, res) {
   // Ensure there is a range given for the video
   const range = req.headers.range;
 
+  console.log(range);
+
   if (!range) {
     res.status(400).send("Requires Range header");
   }
@@ -94,6 +96,9 @@ app.get("/video/:name", function (req, res) {
   videoStream.pipe(res);
 });
 
+
+
+/*
 new hls(server, {
   provider: {
     exists: (req, cb) => {
@@ -120,7 +125,7 @@ new hls(server, {
       cb(null, stream);
     }
   }
-});
+});*/
 
 let port = 3001;
 
