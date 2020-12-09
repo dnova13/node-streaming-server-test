@@ -27,7 +27,7 @@ app.get('/hls/:name', async (req, res) => {
         '-level 3.0',
         // '-s 640x360',          // 640px width, 360px height output video dimensions
         '-start_number 0',     // start the first .ts segment at index 0
-        '-hls_time 100',        // 10 second segment duration
+        '-hls_time 30',        // 10 second segment duration
         '-hls_list_size 0',    // Maxmimum number of playlist entries (0 means all entries/infinite)
         '-f hls'               // HLS format
     ]).on('start', function(commandLine) {
