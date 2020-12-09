@@ -1,10 +1,10 @@
 {
   "name": "http-video-stream",
   "version": "1.0.0",
-  "description": "",
+  "description": "```\r npm install\r npm start\r ```",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon app.js"
   },
   "author": "",
   "license": "ISC",
@@ -15,5 +15,13 @@
     "hls-server": "^1.5.0",
     "nodemon": "^2.0.5",
     "vid-streamer": "^1.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dnova13/node-streaming-server-test.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dnova13/node-streaming-server-test/issues"
+  },
+  "homepage": "https://github.com/dnova13/node-streaming-server-test#readme"
 }

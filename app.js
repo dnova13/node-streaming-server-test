@@ -14,7 +14,14 @@ app.get("/video", function (req, res) {
 app.get("/media/:name", function (req, res) {
 
     console.log(req.param("name"));
+    res.setHeader('Content-Type', 'video/mp4');
     res.sendFile(`${__dirname}/${req.param("name")}`);
+});
+
+app.get("/media/test/:name", function (req, res) {
+
+    console.log(req.param("name"));
+    // res.sendFile(`${__dirname}/${req.param("name")}`);
 });
 
 // console.log(__dirname);
